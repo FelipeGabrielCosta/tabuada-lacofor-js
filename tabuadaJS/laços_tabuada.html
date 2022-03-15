@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brincando com a tabuada</title>
+    <script>
+
+        var aparecerTabuada = function logicaTabuada() {
+            var y = eval(document.getElementById('texto').value)
+            
+
+            for (var x = 1; x <= 10; x++) {
+                document.write(eval(y) + ' x ' + x + ' = ' + (eval(y)*x) + '<br />')
+            }
+            
+        }
+        
+
+    </script>
+</head>
+
+<body >
+    
+    <div id='tabuada'style="border: 1px solid #000; text-align:center; width: 350px; height: 60px; display: block; margin: 0 auto; padding: 2px">
+        <div id="conteudo">
+            <input id="texto" type="text" placeholder="Digite aqui de 1 a 10" style="margin-top: 20px; text-align: left;">  
+            <button id="confirmar" onclick="aparecerTabuada()">Confirmar</button>
+        </div>
+    </div>
+    <footer style="text-align: center;"> &copy Todos os direitos reservados a Felipe Gabriel</footer>
+</body>
+</html>
